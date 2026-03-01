@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChemBasics - Learn Chemistry Properly</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="A structured educational web application for chemistry students to learn fundamentals and perform basic lab calculations.">
+</head>
+<body>
+
+    <!-- Main Navigation Module -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="icon" aria-hidden="true">🧪</span>
+            <span>ChemBasics</span>
+        </div>
+        
+        <button id="mobile-menu-btn" class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">
+            ☰
+        </button>
+
+        <div id="nav-links" class="nav-links">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="pages/fundamentals.html" class="nav-link">Fundamentals</a>
+            <a href="pages/calculators.html" class="nav-link">Calculators</a>
+            <a href="pages/revision.html" class="nav-link">Revision</a>
+            <a href="pages/lab.html" class="nav-link">Lab Basics</a>
+            
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                🌙
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content Layout -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero animate-fade-in">
+            <h1>Master Chemistry Fundamentals</h1>
+            <p>Your minimalist, ad-free companion for learning basic concepts, solving equations, and understanding lab equipment.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="pages/fundamentals.html" class="btn">Start Learning</a>
+                <a href="pages/calculators.html" class="btn btn-outline">Calculators</a>
+            </div>
+        </section>
+
+        <!-- Feature Overview Cards grid -->
+        <section class="features-grid">
+            <div class="card animate-fade-in" style="animation-delay: 0.1s;">
+                <div class="icon" aria-hidden="true">📚</div>
+                <h2>Fundamentals</h2>
+                <p>Clear explanations of atomic structure, periodic trends, and chemical bonds.</p>
+                <div style="margin-top: auto;">
+                    <a href="pages/fundamentals.html" class="btn btn-outline">Explore Concepts</a>
+                </div>
+            </div>
+
+            <div class="card animate-fade-in" style="animation-delay: 0.2s;">
+                <div class="icon" aria-hidden="true">🧮</div>
+                <h2>Calculators</h2>
+                <p>Quickly calculate molarity, normality, and perform dilution equations (V1N1 = V2N2).</p>
+                <div style="margin-top: auto;">
+                    <a href="pages/calculators.html" class="btn btn-outline">Open Calculators</a>
+                </div>
+            </div>
+
+            <div class="card animate-fade-in" style="animation-delay: 0.3s;">
+                <div class="icon" aria-hidden="true">⚡</div>
+                <h2>Quick Revision</h2>
+                <p>Test your knowledge with flashcard-style questions and simple navigation.</p>
+                <div style="margin-top: auto;">
+                    <a href="pages/revision.html" class="btn btn-outline">Start Revision</a>
+                </div>
+            </div>
+
+            <div class="card animate-fade-in" style="animation-delay: 0.4s;">
+                <div class="icon" aria-hidden="true">🥽</div>
+                <h2>Lab Basics</h2>
+                <p>Learn essential lab safety rules, common glassware, and beginner practical tips.</p>
+                <div style="margin-top: auto;">
+                    <a href="pages/lab.html" class="btn btn-outline">View Lab Guide</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Module -->
+    <footer class="footer">
+        <p>&copy; 2026 ChemBasics. Built for chemistry students.</p>
+    </footer>
+
+    <!-- Global Scripts -->
+    <script src="data/concepts.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Revision - ChemBasics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="icon" aria-hidden="true">🧪</span>
+            <span>ChemBasics</span>
+        </div>
+        <button id="mobile-menu-btn" class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+        <div id="nav-links" class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="fundamentals.html" class="nav-link">Fundamentals</a>
+            <a href="calculators.html" class="nav-link">Calculators</a>
+            <a href="revision.html" class="nav-link">Revision</a>
+            <a href="lab.html" class="nav-link">Lab Basics</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        </div>
+    </nav>
+    <main class="container text-center">
+        <div class="hero" style="padding: 2rem 0;">
+            <h1>Quick Revision</h1>
+            <p>Click the card to reveal the answer. Use the buttons to navigate.</p>
+        </div>
+
+        <div class="flashcard-container" id="flashcard-content-wrapper">
+            <div class="flashcard" id="flashcard-content" onclick="RevisionPage.flipCard()">
+                <!-- Inject by JS -->
+            </div>
+        </div>
+
+        <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; align-items: center;">
+            <button id="prev-card-btn" class="btn btn-outline">← Previous</button>
+            <span id="flashcard-counter"
+                style="font-weight: bold; font-family: monospace; font-size: 1.2rem; color: var(--text-color);"></span>
+            <button id="next-card-btn" class="btn btn-outline">Next →</button>
+        </div>
+        <div style="margin-top: 1rem;">
+            <button id="flip-card-btn" class="btn">Flip Card</button>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 ChemBasics.</p>
+    </footer>
+    <script src="../data/concepts.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>

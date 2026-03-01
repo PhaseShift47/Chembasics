@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculators - ChemBasics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <!-- identical nav block -->
+        <div class="nav-brand">
+            <span class="icon" aria-hidden="true">🧪</span>
+            <span>ChemBasics</span>
+        </div>
+        <button id="mobile-menu-btn" class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+        <div id="nav-links" class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="fundamentals.html" class="nav-link">Fundamentals</a>
+            <a href="calculators.html" class="nav-link">Calculators</a>
+            <a href="revision.html" class="nav-link">Revision</a>
+            <a href="lab.html" class="nav-link">Lab Basics</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="hero" style="padding: 2rem 0;">
+            <h1>Lab Calculators</h1>
+            <p>Calculate molarity, normality, and performing dilution calculations precisely.</p>
+        </div>
+        <div class="features-grid">
+
+            <!-- Molarity Card -->
+            <div class="card animate-fade-in">
+                <h2>Molarity (M)</h2>
+                <p
+                    style="font-family: monospace; text-align: center; background: var(--bg-color); padding: 0.5rem; border-radius: 4px;">
+                    M = moles of solute / Liters of solution</p>
+                <div class="form-group">
+                    <label for="molarity-moles">Moles (mol)</label>
+                    <input type="number" id="molarity-moles" class="form-control" placeholder="e.g. 0.5" step="any">
+                </div>
+                <div class="form-group">
+                    <label for="molarity-vol">Volume (L)</label>
+                    <input type="number" id="molarity-vol" class="form-control" placeholder="e.g. 2.0" step="any">
+                </div>
+                <button id="calc-molarity-btn" class="btn" style="width: 100%; margin-bottom: 1rem;">Calculate</button>
+                <div id="molarity-result" style="text-align: center; font-size: 1.1rem; min-height: 1.5rem;"></div>
+            </div>
+
+            <!-- Normality Card -->
+            <div class="card animate-fade-in" style="animation-delay: 0.1s;">
+                <h2>Normality (N)</h2>
+                <p
+                    style="font-family: monospace; text-align: center; background: var(--bg-color); padding: 0.5rem; border-radius: 4px;">
+                    N = equivalents / Liters of solution</p>
+                <div class="form-group">
+                    <label for="normality-eq">Equivalents (eq)</label>
+                    <input type="number" id="normality-eq" class="form-control" placeholder="e.g. 1.5" step="any">
+                </div>
+                <div class="form-group">
+                    <label for="normality-vol">Volume (L)</label>
+                    <input type="number" id="normality-vol" class="form-control" placeholder="e.g. 1.0" step="any">
+                </div>
+                <button id="calc-normality-btn" class="btn" style="width: 100%; margin-bottom: 1rem;">Calculate</button>
+                <div id="normality-result" style="text-align: center; font-size: 1.1rem; min-height: 1.5rem;"></div>
+            </div>
+
+            <!-- Dilution Card -->
+            <div class="card animate-fade-in" style="animation-delay: 0.2s;">
+                <h2>Dilution</h2>
+                <p
+                    style="font-family: monospace; text-align: center; background: var(--bg-color); padding: 0.5rem; border-radius: 4px;">
+                    C₁V₁ = C₂V₂ (Leave ONE empty)</p>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div class="form-group">
+                        <label for="dilution-c1">C₁</label>
+                        <input type="number" id="dilution-c1" class="form-control" step="any">
+                    </div>
+                    <div class="form-group">
+                        <label for="dilution-v1">V₁</label>
+                        <input type="number" id="dilution-v1" class="form-control" step="any">
+                    </div>
+                    <div class="form-group">
+                        <label for="dilution-c2">C₂</label>
+                        <input type="number" id="dilution-c2" class="form-control" step="any">
+                    </div>
+                    <div class="form-group">
+                        <label for="dilution-v2">V₂</label>
+                        <input type="number" id="dilution-v2" class="form-control" step="any">
+                    </div>
+                </div>
+                <button id="calc-dilution-btn" class="btn" style="width: 100%; margin-bottom: 1rem;">Calculate</button>
+                <div id="dilution-result" style="text-align: center; font-size: 1.1rem; min-height: 1.5rem;"></div>
+            </div>
+
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 ChemBasics.</p>
+    </footer>
+    <script src="../data/concepts.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>

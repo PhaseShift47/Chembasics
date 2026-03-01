@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab Basics - ChemBasics</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="icon" aria-hidden="true">🧪</span>
+            <span>ChemBasics</span>
+        </div>
+        <button id="mobile-menu-btn" class="menu-toggle" aria-label="Toggle Navigation" aria-expanded="false">☰</button>
+        <div id="nav-links" class="nav-links">
+            <a href="../index.html" class="nav-link">Home</a>
+            <a href="fundamentals.html" class="nav-link">Fundamentals</a>
+            <a href="calculators.html" class="nav-link">Calculators</a>
+            <a href="revision.html" class="nav-link">Revision</a>
+            <a href="lab.html" class="nav-link">Lab Basics</a>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+        </div>
+    </nav>
+    <main class="container">
+        <div class="hero" style="padding: 2rem 0;">
+            <h1>Lab Basics & Safety</h1>
+            <p>Essential knowledge before entering the chemistry lab.</p>
+        </div>
+
+        <section style="margin-bottom: 3rem;">
+            <div class="card animate-fade-in">
+                <h2 style="color: var(--primary-color);">⚠️ Important Lab Safety Rules</h2>
+                <ul
+                    style="text-align: left; padding-left: 2rem; margin-top: 1rem; display: flex; flex-direction: column; gap: 0.5rem; font-size: 1.1rem; color: var(--text-color);">
+                    <li>Always wear ANSI-approved safety goggles and a lab coat.</li>
+                    <li>Never eat, drink, or chew gum in the laboratory.</li>
+                    <li>Know the locations of the fire extinguisher, eye wash, and safety shower.</li>
+                    <li>Always add acid to water (never water to acid) to prevent splashing and uncontrolled boiling.
+                    </li>
+                    <li>Report all accidents, spills, and broken glassware to the instructor immediately.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="text-align: center; margin-bottom: 2rem;">Common Glassware</h2>
+            <div id="lab-equipment-container"
+                style="display: flex; flex-direction: column; gap: 1rem; max-width: 800px; margin: 0 auto;">
+                <!-- Injected via app.js -->
+            </div>
+        </section>
+
+    </main>
+    <footer class="footer">
+        <p>&copy; 2026 ChemBasics.</p>
+    </footer>
+    <script src="../data/concepts.js"></script>
+    <script src="../app.js"></script>
+</body>
+
+</html>
